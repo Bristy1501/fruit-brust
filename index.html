@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--daisyUI-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <!--font-awesome-->
+    <script src="https://kit.fontawesome.com/789454d435.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Fruit Brust</title>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'bg-primary': '#F85559',
+                        'gradient-start': '#121212',
+                        'gradient-end': '#12121299',
+                    },
+                    fontFamily: {
+                        'lato': ['Lato', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'image-primary': "url('./images/banner1.png')",
+                    }
+                }
+                // 
+            }
+        }
+    </script>
+    <style></style>
+
+</head>
+
+<body>
+    <header class="mx-auto max-w-[1200px] mt-2 p-4 md:p-6 font-lato ">
+        <div class="navbar bg-white md:bg-bg-primary rounded-[600px] mb-4">
+            <!--  menu for large device start-->
+            <div class="navbar-start text-white">
+                <ul class="menu menu-horizontal px-7 font-medium lg:flex hidden ">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                </ul>
+                <!-- medium & small device logo  start-->
+                <div class="flex gap-0 ">
+                    <img src="./images/logo.png" alt=""
+                        class="w-13 h-12 items-center justify-center font-bold lg:hidden ml-2">
+                    <a
+                        class=" btn btn-ghost normal-case text-xl lg:hidden items-center justify-center p-2 text-black  md:text-white md:bg-bg-primary ">Fruit
+                        Burst</a>
+                </div>
+                <!-- medium & small device logo  end-->
+            </div>
+            <!--  menu for large device end-->
+            <!-- large device logo  start-->
+            <div class="navbar-center flex gap-4 ">
+                <img src="./images/logo.png" alt=""
+                    class="w-13 h-12 hidden md:hidden items-center justify-center font-bold lg:inline-block">
+                <a
+                    class=" normal-case text-4xl hidden md:hidden items-center justify-center font-bold lg:inline-block text-white ">Fruit
+                    Burst</a>
+            </div>
+            <!-- large device logo  end-->
+            <div class="navbar-end p-2 ">
+                <!-- search-box for large device start  -->
+                <div class="form-control gap-2 lg:flex hidden relative ">
+                    <input type="text" placeholder="Search here"
+                        class="input input-bordered w-[300px] placeholder-[#12121266]" />
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 absolute top-4 right-4" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+
+                </div>
+                <!-- search-box for large device end -->
+                <!-- collapse menu for small & medium device start-->
+                <div class="dropdown ">
+                    <label tabindex="0" class="btn btn-ghost text-center lg:hidden items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            fill="none">
+                            <path d="M3.75 6.75H20.25M3.75 12H20.25M3.75 17.25H20.25" stroke="#121212"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-32 right-4">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+                <!-- collapse menu for small & medium device end-->
+
+            </div>
+        </div>
+        <!-- banner section -->
+
+        <section>
+            <div class="container mx-auto">
+                <div class="carousel w-full md:max-h-screen[calc(1000vh-614px)] ">
+                    <div id="slide1"
+                        class="carousel-item relative w-full bg-gradient-to-r from-gradient-start to-gradient-end ">
+                        <img src="./images/banner1.png"
+                            class="w-full h-[50vh] md:h-[70vh] lg:h-[90vh] opacity-100 mix-blend-overlay" />
+                        <div
+                            class="absolute flex justify-between items-center transform -translate-y-1/2 left-1 md:left-5 right-1 md:right-5 top-1/2">
+                            <a href="#slide4"
+                                class="btn btn-circle btn-xs md:btn-lg bg-gradient-start text-white border-none ">❮</a>
+                            <div class="text-center text-white">
+                                <h1 class=" font-extrabold px-2 md:text-4xl md:px-20 lg:text-7xl ">Exotic tastes at your
+                                    doorstep</h1>
+                                <p class=" text-[10px] mb-2 md:text-sm lg:text-xl lg:mb-8">We supply highly quality
+                                    organic
+                                    products</p>
+                                <button
+                                    class="btn bg-bg-primary btn-xs md:btn-sm lg:btn-lg border-none rounded-sm lg:rounded-lg py-2 px-2 lg:px-8 lg:text-lg text-[10px] text-white font-bold">Shop
+                                    Now</button>
+                            </div>
+                            <a href="#slide2"
+                                class="btn btn-circle btn-xs md:btn-lg bg-gradient-start text-white border-none ">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide2"
+                        class="carousel-item relative w-full bg-gradient-to-r from-gradient-start to-gradient-end ">
+                        <img src="./images/banner2.png"
+                            class="w-full h-[50vh] md:h-[70vh] lg:h-[90vh] opacity-100 mix-blend-overlay" />
+                        <div
+                            class="absolute flex justify-between items-center transform -translate-y-1/2 left-1 md:left-5 right-1 md:right-5 top-1/2">
+                            <a href="#slide1"
+                                class="btn btn-circle btn-xs md:btn-lg bg-gradient-start text-white border-none ">❮</a>
+                            <div class="text-center text-white">
+                                <h1 class=" font-extrabold px-2 md:text-4xl md:px-20 lg:text-7xl ">Exotic tastes at your
+                                    doorstep</h1>
+                                <p class=" text-[10px] mb-2 md:text-sm lg:text-xl lg:mb-8">We supply highly quality
+                                    organic
+                                    products</p>
+                                <button
+                                    class="btn bg-bg-primary btn-xs md:btn-sm lg:btn-lg border-none rounded-sm lg:rounded-lg py-2 px-2 lg:px-8 lg:text-lg text-[10px] text-white font-bold">Shop
+                                    Now</button>
+                            </div>
+                            <a href="#slide3"
+                                class="btn btn-circle btn-xs md:btn-lg bg-gradient-start text-white border-none ">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide3"
+                        class="carousel-item relative w-full bg-gradient-to-r from-gradient-start to-gradient-end ">
+                        <img src="./images/banner3.png"
+                            class="w-full h-[50vh] md:h-[70vh] lg:h-[90vh] opacity-100 mix-blend-overlay" />
+                        <div
+                            class="absolute flex justify-between items-center transform -translate-y-1/2 left-1 md:left-5 right-1 md:right-5 top-1/2">
+                            <a href="#slide2"
+                                class="btn btn-circle btn-xs md:btn-lg bg-gradient-start text-white border-none ">❮</a>
+                            <div class="text-center text-white">
+                                <h1 class=" font-extrabold px-2 md:text-4xl md:px-20 lg:text-7xl ">Exotic tastes at your
+                                    doorstep</h1>
+                                <p class=" text-[10px] mb-2 md:text-sm lg:text-xl lg:mb-8">We supply highly quality
+                                    organic
+                                    products</p>
+                                <button
+                                    class="btn bg-bg-primary btn-xs md:btn-sm lg:btn-lg border-none rounded-sm lg:rounded-lg py-2 px-2 lg:px-8 lg:text-lg text-[10px] text-white font-bold">Shop
+                                    Now</button>
+                            </div>
+                            <a href="#slide4"
+                                class="btn btn-circle btn-xs md:btn-lg bg-gradient-start text-white border-none ">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide4"
+                        class="carousel-item relative w-full bg-gradient-to-r from-gradient-start to-gradient-end ">
+                        <img src="./images/banner4.png"
+                            class="w-full h-[50vh] md:h-[70vh] lg:h-[90vh] opacity-100 mix-blend-overlay" />
+                        <div
+                            class="absolute flex justify-between items-center transform -translate-y-1/2 left-1 md:left-5 right-1 md:right-5 top-1/2">
+                            <a href="#slide3"
+                                class="btn btn-circle btn-xs md:btn-lg bg-gradient-start text-white border-none ">❮</a>
+                            <div class="text-center text-white">
+                                <h1 class=" font-extrabold px-2 md:text-4xl md:px-20 lg:text-7xl ">Exotic tastes at your
+                                    doorstep</h1>
+                                <p class=" text-[10px] mb-2 md:text-sm lg:text-xl lg:mb-8">We supply highly quality
+                                    organic
+                                    products</p>
+                                <button
+                                    class="btn bg-bg-primary btn-xs md:btn-sm lg:btn-lg border-none rounded-sm lg:rounded-lg py-2 px-2 lg:px-8 lg:text-lg text-[10px] text-white font-bold">Shop
+                                    Now</button>
+                            </div>
+                            <a href="#slide1"
+                                class="btn btn-circle btn-xs md:btn-lg bg-gradient-start text-white border-none ">❯</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- fruit-rating -->
+                <div
+                    class="hidden -mt-14 py-10 px-4 justify-center md:flex items-center gap-10 drop-shadow-lg bg-white p-5 w-[1000] mx-10">
+                    <div>
+                        <img src="images/fruit1.png" alt="">
+                        <p>Strawberry</p>
+                    </div>
+                    <div>
+                        <img src="images/fruit2.png" alt="">
+                        <p>Orange</p>
+                    </div>
+                    <div>
+                        <img src="images/fruit3.png" alt="">
+                        <p>Mango</p>
+                    </div>
+                    <div>
+                        <img src="images/fruit4.png" alt="">
+                        <p>Strawberry</p>
+                    </div>
+                    <div>
+                        <img src="images/fruit5.png" alt="">
+                        <p>Mango</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </header>
+    <main class="font-lato">
+        <section class="mx-auto max-w-[1200px] flex flex-col md:flex-row lg:mt-16 justify-center items-center mb-10">
+            <div class="md:flex-1">
+                <h3
+                    class=" text-center text-xl font-bold md:text-left md:pl-16 md:text-4xl md:font-extrabold lg:text-5xl lg:mb-4">
+                    Deal of the day</h3>
+                <p
+                    class="text-center text-[10px] leading-5 mb-2 py-5 px-16 lg:mb-8 md:text-left md:py-2 md:pr-4 md:text-xs lg:px-16 ">
+                    Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin
+                    literature from 45 BC, making it over 2000 years old..</p>
+            </div>
+            <div class="md:flex-1">
+                <div class="grid grid-flow-col text-center auto-cols-max ml-10 md:ml-16  ">
+                    <div class="flex flex-col gap-3 md:gap-2">
+                        <span class="countdown  text-xl font-extrabold gap-4 md:gap-2 lg:text-5xl">
+                            <span style="--value:15;"></span>
+                        </span>
+                        <p class="text-xs lg:text-lg">Days</p>
+                    </div>
+                    <div class="flex flex-col gap-3 md:gap-2">
+                        <span class="countdown  text-xl font-extrabold gap-4 md:gap-2 lg:text-5xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"
+                                fill="none" class="ml-4">
+                                <path
+                                    d="M7.60902 4.30006C7.48971 4.30006 7.37529 4.25267 7.29093 4.16831C7.20657 4.08395 7.15918 3.96953 7.15918 3.85023C7.15918 3.73092 7.20657 3.6165 7.29093 3.53214C7.37529 3.44778 7.48971 3.40039 7.60902 3.40039C7.72832 3.40039 7.84274 3.44778 7.9271 3.53214C8.01146 3.6165 8.05885 3.73092 8.05885 3.85023C8.05885 3.96953 8.01146 4.08395 7.9271 4.16831C7.84274 4.25267 7.72832 4.30006 7.60902 4.30006ZM7.60902 7.89875C7.48971 7.89875 7.37529 7.85135 7.29093 7.76699C7.20657 7.68263 7.15918 7.56821 7.15918 7.44891C7.15918 7.32961 7.20657 7.21519 7.29093 7.13083C7.37529 7.04647 7.48971 6.99908 7.60902 6.99908C7.72832 6.99908 7.84274 7.04647 7.9271 7.13083C8.01146 7.21519 8.05885 7.32961 8.05885 7.44891C8.05885 7.56821 8.01146 7.68263 7.9271 7.76699C7.84274 7.85135 7.72832 7.89875 7.60902 7.89875ZM7.60902 11.4974C7.48971 11.4974 7.37529 11.45 7.29093 11.3657C7.20657 11.2813 7.15918 11.1669 7.15918 11.0476C7.15918 10.9283 7.20657 10.8139 7.29093 10.7295C7.37529 10.6452 7.48971 10.5978 7.60902 10.5978C7.72832 10.5978 7.84274 10.6452 7.9271 10.7295C8.01146 10.8139 8.05885 10.9283 8.05885 11.0476C8.05885 11.1669 8.01146 11.2813 7.9271 11.3657C7.84274 11.45 7.72832 11.4974 7.60902 11.4974Z"
+                                    stroke="#121212" stroke-width="0.899671" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <span style="--value:10;"></span>
+                        </span>
+                        <p class="text-xs pl-10 lg:text-lg">Hours</p>
+                    </div>
+                    <div class="flex flex-col gap-3 md:gap-2">
+                        <span class="countdown  text-xl font-extrabold gap-4 md:gap-2 lg:text-5xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"
+                                fill="none" class="ml-4">
+                                <path
+                                    d="M7.60902 4.30006C7.48971 4.30006 7.37529 4.25267 7.29093 4.16831C7.20657 4.08395 7.15918 3.96953 7.15918 3.85023C7.15918 3.73092 7.20657 3.6165 7.29093 3.53214C7.37529 3.44778 7.48971 3.40039 7.60902 3.40039C7.72832 3.40039 7.84274 3.44778 7.9271 3.53214C8.01146 3.6165 8.05885 3.73092 8.05885 3.85023C8.05885 3.96953 8.01146 4.08395 7.9271 4.16831C7.84274 4.25267 7.72832 4.30006 7.60902 4.30006ZM7.60902 7.89875C7.48971 7.89875 7.37529 7.85135 7.29093 7.76699C7.20657 7.68263 7.15918 7.56821 7.15918 7.44891C7.15918 7.32961 7.20657 7.21519 7.29093 7.13083C7.37529 7.04647 7.48971 6.99908 7.60902 6.99908C7.72832 6.99908 7.84274 7.04647 7.9271 7.13083C8.01146 7.21519 8.05885 7.32961 8.05885 7.44891C8.05885 7.56821 8.01146 7.68263 7.9271 7.76699C7.84274 7.85135 7.72832 7.89875 7.60902 7.89875ZM7.60902 11.4974C7.48971 11.4974 7.37529 11.45 7.29093 11.3657C7.20657 11.2813 7.15918 11.1669 7.15918 11.0476C7.15918 10.9283 7.20657 10.8139 7.29093 10.7295C7.37529 10.6452 7.48971 10.5978 7.60902 10.5978C7.72832 10.5978 7.84274 10.6452 7.9271 10.7295C8.01146 10.8139 8.05885 10.9283 8.05885 11.0476C8.05885 11.1669 8.01146 11.2813 7.9271 11.3657C7.84274 11.45 7.72832 11.4974 7.60902 11.4974Z"
+                                    stroke="#121212" stroke-width="0.899671" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <span style="--value:24;"></span>
+                        </span>
+                        <p class="text-xs pl-10 lg:text-lg">Minutes</p>
+
+                    </div>
+                    <div class="flex flex-col gap-3 md:gap-2">
+                        <span class="countdown text-xl font-extrabold gap-4 md:gap-2 lg:text-5xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"
+                                fill="none" class="ml-4">
+                                <path
+                                    d="M7.60902 4.30006C7.48971 4.30006 7.37529 4.25267 7.29093 4.16831C7.20657 4.08395 7.15918 3.96953 7.15918 3.85023C7.15918 3.73092 7.20657 3.6165 7.29093 3.53214C7.37529 3.44778 7.48971 3.40039 7.60902 3.40039C7.72832 3.40039 7.84274 3.44778 7.9271 3.53214C8.01146 3.6165 8.05885 3.73092 8.05885 3.85023C8.05885 3.96953 8.01146 4.08395 7.9271 4.16831C7.84274 4.25267 7.72832 4.30006 7.60902 4.30006ZM7.60902 7.89875C7.48971 7.89875 7.37529 7.85135 7.29093 7.76699C7.20657 7.68263 7.15918 7.56821 7.15918 7.44891C7.15918 7.32961 7.20657 7.21519 7.29093 7.13083C7.37529 7.04647 7.48971 6.99908 7.60902 6.99908C7.72832 6.99908 7.84274 7.04647 7.9271 7.13083C8.01146 7.21519 8.05885 7.32961 8.05885 7.44891C8.05885 7.56821 8.01146 7.68263 7.9271 7.76699C7.84274 7.85135 7.72832 7.89875 7.60902 7.89875ZM7.60902 11.4974C7.48971 11.4974 7.37529 11.45 7.29093 11.3657C7.20657 11.2813 7.15918 11.1669 7.15918 11.0476C7.15918 10.9283 7.20657 10.8139 7.29093 10.7295C7.37529 10.6452 7.48971 10.5978 7.60902 10.5978C7.72832 10.5978 7.84274 10.6452 7.9271 10.7295C8.01146 10.8139 8.05885 10.9283 8.05885 11.0476C8.05885 11.1669 8.01146 11.2813 7.9271 11.3657C7.84274 11.45 7.72832 11.4974 7.60902 11.4974Z"
+                                    stroke="#121212" stroke-width="0.899671" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <span style="--value:13;"></span>
+                        </span>
+                        <p class="text-xs pl-10 lg:text-lg">Seconds</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="flex flex-col mb-10">
+            <div
+                class="md:mx-14  mb-5 lg:mt-16 justify-center items-center mx-4 grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:gap-8 lg:gap-4 lg:mx-24">
+                <div class="card bg-base-100 border-[#1212121a] border-2 mb-4 rounded-lg">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl w-24 p-4" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title  ">12.90$ - 18.85$!</h2>
+                        <hr class="w-1/2 m-auto">
+                        <p class="text-sm text-gradient-start">Apples</p>
+                        <div class="rating rating-lg rating-half w-28">
+                            <input type="radio" name="card-1" class="rating-hidden" />
+                            <input type="radio" name="card-1" class="bg-bg-primary mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="card-1" class="bg-bg-primary mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="card-1" class="bg-bg-primary mask mask-star-2 mask-half-1"
+                                checked />
+                            <input type="radio" name="card-1" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="card-1" class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="card-1" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="card-1" class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="card-1" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="card-1" class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="card-1" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-ghost text-bg-primary text-sm capitalize"
+                                onclick="apple.showModal()">Details</button>
+                            <dialog id="apple" class="modal modal-middle sm:modal-middle">
+                                <form method="dialog" class="modal-box mx-auto w-10/12 md:w-1/2 lg:w-1/4 max-w-xl">
+                                    <figure class="lg:px-10 lg:pt-10 md:px-7 md:pt-2">
+                                        <img src="./images/fruit6.png" alt="Shoes"
+                                            class="rounded-xl w-16 md:w-16 lg:w-24 p-4" />
+                                    </figure>
+                                    <h2
+                                        class="text-sm font-extrabold text-gradient-start lg:text-4xl lg:font-extrabold lg:mb-4 md:text-2xl md:font-bold md:mb-2">
+                                        Apples</h2>
+                                    <p
+                                        class="text-[10px] text-[#12121266] text-gradient-start lg:mb-4 md:mb-2 md:px-10">
+                                        Professional employees are there for you to pick the most amazing and fresh
+                                        fruits.</p>
+                                    <div class="rating rating-lg rating-half w-16  md:w-28 mb-4">
+                                        <input type="radio" name="card-1" class="rating-hidden" />
+                                        <input type="radio" name="card-1"
+                                            class="bg-bg-primary mask mask-star-2 mask-half-1" />
+                                        <input type="radio" name="card-1"
+                                            class="bg-bg-primary mask mask-star-2 mask-half-2" />
+                                        <input type="radio" name="card-1"
+                                            class="bg-bg-primary mask mask-star-2 mask-half-1" checked />
+                                        <input type="radio" name="card-1"
+                                            class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                                        <input type="radio" name="card-1"
+                                            class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
+                                        <input type="radio" name="card-1"
+                                            class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                                        <input type="radio" name="card-1"
+                                            class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
+                                        <input type="radio" name="card-1"
+                                            class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                                        <input type="radio" name="card-1"
+                                            class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
+                                        <input type="radio" name="card-1"
+                                            class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                                    </div>
+                                    <div
+                                        class="modal-action flex flex-end flex-row items-center justify-center -mb-2 lg:mb-10 md:mb-2">
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <button class="btn btn-outline btn-error rounded-lg">Close</button>
+                                        <button class="btn bg-[#F85559] rounded-lg">Buy Now</button>
+                                    </div>
+                                </form>
+                            </dialog>
+                            <!-- <a href="">Buy Now</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 border-[#1212121a] border-2 mb-4 rounded-lg">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/fruit7.png" alt="Shoes" class="rounded-xl w-28 p-4" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title  ">12.90$ - 18.85$!</h2>
+                        <hr class="w-1/2 m-auto">
+                        <p class="text-sm text-gradient-start">Orange</p>
+                        <div class="rating rating-lg rating-half w-28">
+                            <!-- <input type="radio" name="card-2" class="rating-hidden" /> -->
+                            <input type="radio" name="card-2" class="bg-bg-primary mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="card-2" class="bg-bg-primary mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="card-2" class="bg-bg-primary mask mask-star-2 mask-half-1"
+                                checked />
+                            <input type="radio" name="card-2" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="card-2" class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="card-2" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="card-2" class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="card-2" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="card-2" class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="card-2" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-ghost text-bg-primary text-sm capitalize"
+                                onclick="orange.showModal()">Details</button>
+                            <dialog id="orange" class="modal modal-middle sm:modal-middle">
+                                <form method="dialog" class="modal-box mx-auto w-10/12 md:w-1/2 lg:w-1/4 max-w-xl">
+                                    <figure class="lg:px-10 lg:pt-10 md:px-7 md:pt-2">
+                                        <img src="./images/fruit7.png" alt="Shoes"
+                                            class="rounded-xl w-16 md:w-20 lg:w-28 p-4" />
+                                    </figure>
+                                    <h2
+                                        class="text-sm font-extrabold text-gradient-start lg:text-4xl lg:font-extrabold lg:mb-4 md:text-2xl md:font-bold md:mb-2">
+                                        Orange</h2>
+                                    <p
+                                        class="text-[10px] text-[#12121266] text-gradient-start lg:mb-4 md:mb-2 md:px-10">
+                                        Professional employees are there for you to pick the most amazing and fresh
+                                        fruits.</p>
+                                    <div class="rating rating-lg rating-half w-16  md:w-28 mb-4">
+                                        <input type="radio" name="card-2" class="rating-hidden" />
+                                        <input type="radio" name="card-2"
+                                            class="bg-bg-primary mask mask-star-2 mask-half-1" />
+                                        <input type="radio" name="card-2"
+                                            class="bg-bg-primary mask mask-star-2 mask-half-2" />
+                                        <input type="radio" name="card-2"
+                                            class="bg-bg-primary mask mask-star-2 mask-half-1" checked />
+                                        <input type="radio" name="card-2"
+                                            class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                                        <input type="radio" name="card-2"
+                                            class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
+                                        <input type="radio" name="card-2"
+                                            class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                                        <input type="radio" name="card-2"
+                                            class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
+                                        <input type="radio" name="card-2"
+                                            class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                                        <input type="radio" name="card-2"
+                                            class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
+                                        <input type="radio" name="card-2"
+                                            class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                                    </div>
+                                    <div
+                                        class="modal-action flex flex-end flex-row items-center justify-center -mb-2 lg:mb-10 md:mb-2">
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <button class="btn btn-outline btn-error rounded-lg">Close</button>
+                                        <button class="btn bg-[#F85559] rounded-lg">Buy Now</button>
+                                    </div>
+                                </form>
+                            </dialog>
+                            <!-- <a href="">Buy Now</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 border-[#1212121a] border-2 mb-4 rounded-lg">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/fruit8.png" alt="Shoes" class="rounded-xl w-28 p-4" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title  ">12.90$ - 18.85$!</h2>
+                        <hr class="w-1/2 m-auto">
+                        <p class="text-sm text-gradient-start">Red Dragon</p>
+                        <div class="rating rating-lg rating-half w-28">
+                            <input type="radio" name="card-3" class="rating-hidden" />
+                            <input type="radio" name="card-3" class="bg-bg-primary mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="card-3" class="bg-bg-primary mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="card-3" class="bg-bg-primary mask mask-star-2 mask-half-1"
+                                checked />
+                            <input type="radio" name="card-3" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="card-3" class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="card-3" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="card-3" class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="card-3" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="card-3" class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="card-3" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-ghost text-bg-primary text-sm capitalize"
+                                onclick="Dragon.showModal()">Details</button>
+                            <dialog id="Dragon" class="modal modal-middle sm:modal-middle">
+                                <form method="dialog" class="modal-box mx-auto w-10/12 md:w-1/2 lg:w-1/4 max-w-xl">
+                                    <figure class="lg:px-10 lg:pt-10 md:px-7 md:pt-2">
+                                        <img src="./images/fruit8.png" alt="Shoes"
+                                            class="rounded-xl w-16 md:w-20 lg:w-28 p-4" />
+                                    </figure>
+                                    <h2
+                                        class="text-sm font-extrabold text-gradient-start lg:text-4xl lg:font-extrabold lg:mb-4 md:text-2xl md:font-bold md:mb-2">
+                                        Red Dragon</h2>
+                                    <p
+                                        class="text-[10px] text-[#12121266] text-gradient-start lg:mb-4 md:mb-2 md:px-10">
+                                        Professional employees are there for you to pick the most amazing and fresh
+                                        fruits.</p>
+                                    <div class="rating rating-lg rating-half w-16  md:w-28 mb-4">
+                                        <input type="radio" name="card-3" class="rating-hidden" />
+                                        <input type="radio" name="card-3"
+                                            class="bg-bg-primary mask mask-star-2 mask-half-1" />
+                                        <input type="radio" name="card-3"
+                                            class="bg-bg-primary mask mask-star-2 mask-half-2" />
+                                        <input type="radio" name="card-3"
+                                            class="bg-bg-primary mask mask-star-2 mask-half-1" checked />
+                                        <input type="radio" name="card-3"
+                                            class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                                        <input type="radio" name="card-3"
+                                            class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
+                                        <input type="radio" name="card-3"
+                                            class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                                        <input type="radio" name="card-3"
+                                            class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
+                                        <input type="radio" name="card-3"
+                                            class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                                        <input type="radio" name="card-3"
+                                            class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
+                                        <input type="radio" name="card-3"
+                                            class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                                    </div>
+                                    <div
+                                        class="modal-action flex flex-end flex-row items-center justify-center -mb-2 lg:mb-10 md:mb-2">
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <button class="btn btn-outline btn-error rounded-lg">Close</button>
+                                        <button class="btn bg-[#F85559] rounded-lg">Buy Now</button>
+                                    </div>
+                                </form>
+                            </dialog>
+                            <!-- <a href="">Buy Now</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 border-[#1212121a] border-2 mb-4 rounded-lg">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/fruit9.png" alt="Shoes" class="rounded-xl w-28 p-4" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title  ">12.90$ - 18.85$!</h2>
+                        <hr class="w-1/2 m-auto">
+                        <p class="text-sm text-gradient-start">Banana</p>
+                        <div class="rating rating-lg rating-half w-28">
+                            <input type="radio" name="card-4" class="rating-hidden" />
+                            <input type="radio" name="card-4" class="bg-bg-primary mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="card-4" class="bg-bg-primary mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="card-4" class="bg-bg-primary mask mask-star-2 mask-half-1"
+                                checked />
+                            <input type="radio" name="card-4" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="card-4" class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="card-4" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="card-4" class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="card-4" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="card-4" class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="card-4" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-ghost text-bg-primary text-sm capitalize"
+                                onclick="Banana.showModal()">Details</button>
+                            <dialog id="Banana" class="modal modal-middle sm:modal-middle">
+                                <form method="dialog" class="modal-box mx-auto w-10/12 md:w-1/2 lg:w-1/4 max-w-xl">
+                                    <figure class="lg:px-10 lg:pt-10 md:px-7 md:pt-2">
+                                        <img src="./images/fruit9.png" alt="Shoes"
+                                            class="rounded-xl w-16 md:w-20 lg:w-28 p-4" />
+                                    </figure>
+                                    <h2
+                                        class="text-sm font-extrabold text-gradient-start lg:text-4xl lg:font-extrabold lg:mb-4 md:text-2xl md:font-bold md:mb-2">
+                                        Banana</h2>
+                                    <p
+                                        class="text-[10px] text-[#12121266] text-gradient-start lg:mb-4 md:mb-2 md:px-10">
+                                        Professional employees are there for you to pick the most amazing and fresh
+                                        fruits.</p>
+                                    <div class="rating rating-lg rating-half w-16  md:w-28 mb-4">
+                                        <input type="radio" name="card-4" class="rating-hidden" />
+                                        <input type="radio" name="card-4"
+                                            class="bg-bg-primary mask mask-star-2 mask-half-1" />
+                                        <input type="radio" name="card-4"
+                                            class="bg-bg-primary mask mask-star-2 mask-half-2" />
+                                        <input type="radio" name="card-4"
+                                            class="bg-bg-primary mask mask-star-2 mask-half-1" checked />
+                                        <input type="radio" name="card-4"
+                                            class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                                        <input type="radio" name="card-4"
+                                            class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
+                                        <input type="radio" name="card-4"
+                                            class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                                        <input type="radio" name="card-4"
+                                            class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
+                                        <input type="radio" name="card-4"
+                                            class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                                        <input type="radio" name="card-4"
+                                            class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
+                                        <input type="radio" name="card-4"
+                                            class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                                    </div>
+                                    <div
+                                        class="modal-action flex flex-end flex-row items-center justify-center -mb-2 lg:mb-10 md:mb-2">
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <button class="btn btn-outline btn-error rounded-lg">Close</button>
+                                        <button class="btn bg-[#F85559] rounded-lg">Buy Now</button>
+                                    </div>
+                                </form>
+                            </dialog>
+                            <!-- <a href="">Buy Now</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mx-auto">
+                <button
+                    class="btn bg-bg-primary btn-xs  md:btn-lg border-none rounded-sm md:rounded-lg py-2 px-2 md:px-8 md:text-lg text-[10px] text-white font-bold">Shop
+                    All</button>
+            </div>
+
+        </section>
+        <!-- team section -->
+        <section
+            class="mx-4 max-w-[1200px] lg:mt-16 mb-10 lg:mx-24 bg-gradient-to-r from-gradient-start to-gradient-end">
+            <div
+                class=" bg-image-primary bg-no-repeat bg-cover bg-center pt-10 text-white rounded-lg opacity-100 mix-blend-overlay  ">
+                <h3 class=" text-center text-xl font-bold md:pl-16 md:text-4xl md:font-extrabold lg:text-5xl lg:mb-4">
+                    Meet the team</h3>
+                <p
+                    class="text-center text-[10px] leading-5 mb-2 py-5 px-10 lg:mb-8  md:py-2 md:pr-4 md:text-xs lg:px-40 md:px-28 lg:mx-36 ">
+                    Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin
+                    literature from 45 BC, making it over 2000 years old.</p>
+                <div
+                    class="md:mx-14  mb-5 lg:mt-16 justify-center items-center mx-4 grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:gap-8 lg:gap-2 lg:mx-24">
+                    <div class="card bg-transparent mb-4">
+                        <figure class="px-8 pt-8">
+                            <img src="./images/member1.png" alt="Shoes" class="rounded-xl " />
+                        </figure>
+                        <div class="card-body items-center text-center mb-4">
+                            <h2 class="card-title  text-white  ">Awlad Hossain</h2>
+                            <p class="text-sm text-white ">Fruits Expert</p>
+
+                            <div class="card-actions flex flex-row ">
+
+
+                                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" class="bg-[#F85559] rounded-full w-5 h-5">
+                                        <g clip-path="url(#clip0_43_894)">
+                                            <path
+                                                d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z"
+                                                fill="#F85559" />
+                                            <path
+                                                d="M15.8017 10.5791L15.5604 12.6695C15.5503 12.7649 15.5056 12.8533 15.4347 12.9179C15.3639 12.9825 15.2717 13.0189 15.1758 13.02H12.994L12.9831 19.2177C12.9838 19.2912 12.9556 19.362 12.9046 19.4148C12.8536 19.4676 12.7838 19.4982 12.7104 19.5H10.4999C10.4631 19.5 10.4268 19.4926 10.3929 19.4782C10.3591 19.4639 10.3286 19.4428 10.3031 19.4163C10.2776 19.3898 10.2578 19.3584 10.2447 19.3241C10.2317 19.2897 10.2257 19.2531 10.2272 19.2164V13.02H8.59081C8.53941 13.0195 8.48862 13.0088 8.44135 12.9887C8.39407 12.9685 8.35122 12.9392 8.31526 12.9025C8.2793 12.8658 8.25092 12.8223 8.23175 12.7746C8.21258 12.7269 8.20299 12.6759 8.20353 12.6245L8.19535 10.5341C8.19463 10.4825 8.20408 10.4313 8.22315 10.3834C8.24222 10.3355 8.27055 10.2918 8.30651 10.2548C8.34247 10.2178 8.38537 10.1883 8.43274 10.1679C8.48012 10.1475 8.53105 10.1366 8.58262 10.1359H10.2272V8.11773C10.2272 5.775 11.6181 4.5 13.6581 4.5H15.3299C15.3816 4.50053 15.4327 4.51127 15.4802 4.53158C15.5277 4.5519 15.5708 4.5814 15.6069 4.6184C15.643 4.65539 15.6714 4.69915 15.6906 4.74716C15.7098 4.79517 15.7193 4.84649 15.7185 4.89818V6.65727C15.7193 6.70896 15.7098 6.76028 15.6906 6.8083C15.6714 6.85631 15.643 6.90007 15.6069 6.93706C15.5708 6.97405 15.5277 7.00355 15.4802 7.02387C15.4327 7.04419 15.3816 7.05492 15.3299 7.05545H14.3044C13.1958 7.05545 12.9804 7.60091 12.9804 8.38909V10.1359H15.4172C15.4726 10.1366 15.5272 10.149 15.5775 10.1723C15.6278 10.1957 15.6726 10.2294 15.7089 10.2712C15.7452 10.3131 15.7722 10.3622 15.7882 10.4152C15.8043 10.4683 15.8088 10.5241 15.8017 10.5791Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_43_894">
+                                                <rect width="24" height="24" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg></a>
+                                <a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        class="bg-[#F85559] rounded-full w-5 h-5">
+                                        <g clip-path="url(#clip0_43_899)">
+                                            <path
+                                                d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z"
+                                                fill="#F85559" />
+                                            <path
+                                                d="M19.773 7.17947C19.1883 7.43483 18.5699 7.60447 17.9367 7.68316C18.6041 7.28737 19.1031 6.66034 19.3388 5.92105C18.7141 6.29185 18.0306 6.55298 17.3178 6.69316C16.881 6.22603 16.3137 5.90115 15.6898 5.76077C15.0658 5.6204 14.4141 5.67103 13.8193 5.90607C13.2246 6.14112 12.7143 6.54971 12.3549 7.07869C11.9954 7.60768 11.8035 8.23257 11.8041 8.87211C11.8018 9.11621 11.8267 9.35981 11.8783 9.59842C10.6104 9.53614 9.36981 9.20708 8.23771 8.63273C7.1056 8.05838 6.10739 7.25166 5.30829 6.26526C4.89754 6.96696 4.77029 7.79904 4.95254 8.59143C5.13478 9.38381 5.61278 10.0767 6.28881 10.5284C5.78422 10.5148 5.29031 10.38 4.84881 10.1353V10.17C4.85023 10.9055 5.10482 11.6181 5.56978 12.188C6.03474 12.7579 6.68172 13.1504 7.40197 13.2995C7.1294 13.3711 6.84852 13.4061 6.56671 13.4037C6.36379 13.4074 6.16106 13.3894 5.96197 13.35C6.16832 13.9826 6.56559 14.5356 7.09913 14.9332C7.63268 15.3307 8.27629 15.5532 8.94145 15.57C7.81427 16.451 6.42472 16.9296 4.99408 16.9295C4.73917 16.9316 4.4844 16.9169 4.23145 16.8853C5.69019 17.8258 7.39054 18.3227 9.12618 18.3158C14.992 18.3158 18.1988 13.4574 18.1988 9.24632C18.1988 9.10579 18.1988 8.97 18.1878 8.83421C18.8123 8.38348 19.3495 7.82275 19.773 7.17947Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_43_899">
+                                                <rect width="24" height="24" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg></a>
+                                <a>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        class="bg-[#F85559] rounded-full w-5 h-5">
+                                        <g clip-path="url(#clip0_43_905)">
+                                            <path
+                                                d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z"
+                                                fill="#F85559" />
+                                            <path
+                                                d="M9.31598 7.63737C9.31629 7.96166 9.2204 8.27875 9.04043 8.54851C8.86046 8.81828 8.6045 9.02859 8.30496 9.15284C8.00542 9.27708 7.67575 9.30967 7.35768 9.24648C7.03961 9.18329 6.74743 9.02716 6.51812 8.79786C6.28882 8.56855 6.13269 8.27637 6.0695 7.9583C6.00631 7.64023 6.0389 7.31056 6.16315 7.01102C6.28739 6.71148 6.4977 6.45552 6.76747 6.27556C7.03723 6.09559 7.35433 5.99969 7.67861 6C8.11274 6.00042 8.52897 6.17306 8.83595 6.48004C9.14292 6.78701 9.31556 7.20324 9.31598 7.63737Z"
+                                                fill="white" />
+                                            <path
+                                                d="M8.54113 9.95842H6.81692C6.59281 9.95842 6.41113 10.1401 6.41113 10.3642V17.5942C6.41113 17.8183 6.59281 18 6.81692 18H8.54113C8.76524 18 8.94692 17.8183 8.94692 17.5942V10.3642C8.94692 10.1401 8.76524 9.95842 8.54113 9.95842Z"
+                                                fill="white" />
+                                            <path
+                                                d="M17.9605 14.1268V17.6274C17.9605 17.7262 17.9213 17.821 17.8514 17.8909C17.7815 17.9607 17.6867 18 17.5879 18H15.7374C15.6385 18 15.5438 17.9607 15.4739 17.8909C15.404 17.821 15.3647 17.7262 15.3647 17.6274V14.2358C15.3647 13.7289 15.5116 12.0253 14.0416 12.0253C12.9016 12.0253 12.6695 13.1968 12.6205 13.7226V17.6353C12.6185 17.7322 12.5787 17.8245 12.5098 17.8926C12.4408 17.9607 12.348 17.9992 12.2511 18H10.4605C10.4115 18.0002 10.363 17.9907 10.3177 17.9721C10.2724 17.9534 10.2312 17.926 10.1966 17.8913C10.1619 17.8567 10.1345 17.8155 10.1158 17.7702C10.0972 17.7249 10.0877 17.6764 10.0879 17.6274V10.3326C10.0877 10.2836 10.0972 10.2349 10.1158 10.1895C10.1344 10.1442 10.1619 10.1029 10.1965 10.0681C10.2311 10.0334 10.2722 10.0058 10.3176 9.98694C10.3629 9.96811 10.4115 9.95842 10.4605 9.95842H12.2511C12.3007 9.95758 12.3501 9.96664 12.3962 9.98507C12.4423 10.0035 12.4843 10.0309 12.5198 10.0658C12.5552 10.1006 12.5833 10.1421 12.6025 10.188C12.6217 10.2338 12.6316 10.283 12.6316 10.3326V10.9642C13.0547 10.3326 13.6832 9.84 15.0205 9.84C17.9779 9.83842 17.9605 12.6063 17.9605 14.1268Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_43_905">
+                                                <rect width="24" height="24" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-transparent mb-4">
+                        <figure class="px-8 pt-8">
+                            <img src="./images/member2.png" alt="Shoes" class="rounded-xl " />
+                        </figure>
+                        <div class="card-body items-center text-center mb-4">
+                            <h2 class="card-title  text-white  ">Safia Chowdhury</h2>
+                            <p class="text-sm text-white ">Fruits Expert</p>
+
+                            <div class="card-actions flex flex-row ">
+
+
+                                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" class="bg-[#F85559] rounded-full w-5 h-5">
+                                        <g clip-path="url(#clip0_43_894)">
+                                            <path
+                                                d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z"
+                                                fill="#F85559" />
+                                            <path
+                                                d="M15.8017 10.5791L15.5604 12.6695C15.5503 12.7649 15.5056 12.8533 15.4347 12.9179C15.3639 12.9825 15.2717 13.0189 15.1758 13.02H12.994L12.9831 19.2177C12.9838 19.2912 12.9556 19.362 12.9046 19.4148C12.8536 19.4676 12.7838 19.4982 12.7104 19.5H10.4999C10.4631 19.5 10.4268 19.4926 10.3929 19.4782C10.3591 19.4639 10.3286 19.4428 10.3031 19.4163C10.2776 19.3898 10.2578 19.3584 10.2447 19.3241C10.2317 19.2897 10.2257 19.2531 10.2272 19.2164V13.02H8.59081C8.53941 13.0195 8.48862 13.0088 8.44135 12.9887C8.39407 12.9685 8.35122 12.9392 8.31526 12.9025C8.2793 12.8658 8.25092 12.8223 8.23175 12.7746C8.21258 12.7269 8.20299 12.6759 8.20353 12.6245L8.19535 10.5341C8.19463 10.4825 8.20408 10.4313 8.22315 10.3834C8.24222 10.3355 8.27055 10.2918 8.30651 10.2548C8.34247 10.2178 8.38537 10.1883 8.43274 10.1679C8.48012 10.1475 8.53105 10.1366 8.58262 10.1359H10.2272V8.11773C10.2272 5.775 11.6181 4.5 13.6581 4.5H15.3299C15.3816 4.50053 15.4327 4.51127 15.4802 4.53158C15.5277 4.5519 15.5708 4.5814 15.6069 4.6184C15.643 4.65539 15.6714 4.69915 15.6906 4.74716C15.7098 4.79517 15.7193 4.84649 15.7185 4.89818V6.65727C15.7193 6.70896 15.7098 6.76028 15.6906 6.8083C15.6714 6.85631 15.643 6.90007 15.6069 6.93706C15.5708 6.97405 15.5277 7.00355 15.4802 7.02387C15.4327 7.04419 15.3816 7.05492 15.3299 7.05545H14.3044C13.1958 7.05545 12.9804 7.60091 12.9804 8.38909V10.1359H15.4172C15.4726 10.1366 15.5272 10.149 15.5775 10.1723C15.6278 10.1957 15.6726 10.2294 15.7089 10.2712C15.7452 10.3131 15.7722 10.3622 15.7882 10.4152C15.8043 10.4683 15.8088 10.5241 15.8017 10.5791Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_43_894">
+                                                <rect width="24" height="24" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg></a>
+                                <a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        class="bg-[#F85559] rounded-full w-5 h-5">
+                                        <g clip-path="url(#clip0_43_899)">
+                                            <path
+                                                d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z"
+                                                fill="#F85559" />
+                                            <path
+                                                d="M19.773 7.17947C19.1883 7.43483 18.5699 7.60447 17.9367 7.68316C18.6041 7.28737 19.1031 6.66034 19.3388 5.92105C18.7141 6.29185 18.0306 6.55298 17.3178 6.69316C16.881 6.22603 16.3137 5.90115 15.6898 5.76077C15.0658 5.6204 14.4141 5.67103 13.8193 5.90607C13.2246 6.14112 12.7143 6.54971 12.3549 7.07869C11.9954 7.60768 11.8035 8.23257 11.8041 8.87211C11.8018 9.11621 11.8267 9.35981 11.8783 9.59842C10.6104 9.53614 9.36981 9.20708 8.23771 8.63273C7.1056 8.05838 6.10739 7.25166 5.30829 6.26526C4.89754 6.96696 4.77029 7.79904 4.95254 8.59143C5.13478 9.38381 5.61278 10.0767 6.28881 10.5284C5.78422 10.5148 5.29031 10.38 4.84881 10.1353V10.17C4.85023 10.9055 5.10482 11.6181 5.56978 12.188C6.03474 12.7579 6.68172 13.1504 7.40197 13.2995C7.1294 13.3711 6.84852 13.4061 6.56671 13.4037C6.36379 13.4074 6.16106 13.3894 5.96197 13.35C6.16832 13.9826 6.56559 14.5356 7.09913 14.9332C7.63268 15.3307 8.27629 15.5532 8.94145 15.57C7.81427 16.451 6.42472 16.9296 4.99408 16.9295C4.73917 16.9316 4.4844 16.9169 4.23145 16.8853C5.69019 17.8258 7.39054 18.3227 9.12618 18.3158C14.992 18.3158 18.1988 13.4574 18.1988 9.24632C18.1988 9.10579 18.1988 8.97 18.1878 8.83421C18.8123 8.38348 19.3495 7.82275 19.773 7.17947Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_43_899">
+                                                <rect width="24" height="24" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg></a>
+                                <a>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        class="bg-[#F85559] rounded-full w-5 h-5">
+                                        <g clip-path="url(#clip0_43_905)">
+                                            <path
+                                                d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z"
+                                                fill="#F85559" />
+                                            <path
+                                                d="M9.31598 7.63737C9.31629 7.96166 9.2204 8.27875 9.04043 8.54851C8.86046 8.81828 8.6045 9.02859 8.30496 9.15284C8.00542 9.27708 7.67575 9.30967 7.35768 9.24648C7.03961 9.18329 6.74743 9.02716 6.51812 8.79786C6.28882 8.56855 6.13269 8.27637 6.0695 7.9583C6.00631 7.64023 6.0389 7.31056 6.16315 7.01102C6.28739 6.71148 6.4977 6.45552 6.76747 6.27556C7.03723 6.09559 7.35433 5.99969 7.67861 6C8.11274 6.00042 8.52897 6.17306 8.83595 6.48004C9.14292 6.78701 9.31556 7.20324 9.31598 7.63737Z"
+                                                fill="white" />
+                                            <path
+                                                d="M8.54113 9.95842H6.81692C6.59281 9.95842 6.41113 10.1401 6.41113 10.3642V17.5942C6.41113 17.8183 6.59281 18 6.81692 18H8.54113C8.76524 18 8.94692 17.8183 8.94692 17.5942V10.3642C8.94692 10.1401 8.76524 9.95842 8.54113 9.95842Z"
+                                                fill="white" />
+                                            <path
+                                                d="M17.9605 14.1268V17.6274C17.9605 17.7262 17.9213 17.821 17.8514 17.8909C17.7815 17.9607 17.6867 18 17.5879 18H15.7374C15.6385 18 15.5438 17.9607 15.4739 17.8909C15.404 17.821 15.3647 17.7262 15.3647 17.6274V14.2358C15.3647 13.7289 15.5116 12.0253 14.0416 12.0253C12.9016 12.0253 12.6695 13.1968 12.6205 13.7226V17.6353C12.6185 17.7322 12.5787 17.8245 12.5098 17.8926C12.4408 17.9607 12.348 17.9992 12.2511 18H10.4605C10.4115 18.0002 10.363 17.9907 10.3177 17.9721C10.2724 17.9534 10.2312 17.926 10.1966 17.8913C10.1619 17.8567 10.1345 17.8155 10.1158 17.7702C10.0972 17.7249 10.0877 17.6764 10.0879 17.6274V10.3326C10.0877 10.2836 10.0972 10.2349 10.1158 10.1895C10.1344 10.1442 10.1619 10.1029 10.1965 10.0681C10.2311 10.0334 10.2722 10.0058 10.3176 9.98694C10.3629 9.96811 10.4115 9.95842 10.4605 9.95842H12.2511C12.3007 9.95758 12.3501 9.96664 12.3962 9.98507C12.4423 10.0035 12.4843 10.0309 12.5198 10.0658C12.5552 10.1006 12.5833 10.1421 12.6025 10.188C12.6217 10.2338 12.6316 10.283 12.6316 10.3326V10.9642C13.0547 10.3326 13.6832 9.84 15.0205 9.84C17.9779 9.83842 17.9605 12.6063 17.9605 14.1268Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_43_905">
+                                                <rect width="24" height="24" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-transparent mb-4">
+                        <figure class="px-8 pt-8">
+                            <img src="./images/member3.png" alt="Shoes" class="rounded-xl " />
+                        </figure>
+                        <div class="card-body items-center text-center mb-4">
+                            <h2 class="card-title  text-white  ">Rokib Hossain</h2>
+                            <p class="text-sm text-white ">Fruits Expert</p>
+
+                            <div class="card-actions flex flex-row ">
+
+
+                                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" class="bg-[#F85559] rounded-full w-5 h-5">
+                                        <g clip-path="url(#clip0_43_894)">
+                                            <path
+                                                d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z"
+                                                fill="#F85559" />
+                                            <path
+                                                d="M15.8017 10.5791L15.5604 12.6695C15.5503 12.7649 15.5056 12.8533 15.4347 12.9179C15.3639 12.9825 15.2717 13.0189 15.1758 13.02H12.994L12.9831 19.2177C12.9838 19.2912 12.9556 19.362 12.9046 19.4148C12.8536 19.4676 12.7838 19.4982 12.7104 19.5H10.4999C10.4631 19.5 10.4268 19.4926 10.3929 19.4782C10.3591 19.4639 10.3286 19.4428 10.3031 19.4163C10.2776 19.3898 10.2578 19.3584 10.2447 19.3241C10.2317 19.2897 10.2257 19.2531 10.2272 19.2164V13.02H8.59081C8.53941 13.0195 8.48862 13.0088 8.44135 12.9887C8.39407 12.9685 8.35122 12.9392 8.31526 12.9025C8.2793 12.8658 8.25092 12.8223 8.23175 12.7746C8.21258 12.7269 8.20299 12.6759 8.20353 12.6245L8.19535 10.5341C8.19463 10.4825 8.20408 10.4313 8.22315 10.3834C8.24222 10.3355 8.27055 10.2918 8.30651 10.2548C8.34247 10.2178 8.38537 10.1883 8.43274 10.1679C8.48012 10.1475 8.53105 10.1366 8.58262 10.1359H10.2272V8.11773C10.2272 5.775 11.6181 4.5 13.6581 4.5H15.3299C15.3816 4.50053 15.4327 4.51127 15.4802 4.53158C15.5277 4.5519 15.5708 4.5814 15.6069 4.6184C15.643 4.65539 15.6714 4.69915 15.6906 4.74716C15.7098 4.79517 15.7193 4.84649 15.7185 4.89818V6.65727C15.7193 6.70896 15.7098 6.76028 15.6906 6.8083C15.6714 6.85631 15.643 6.90007 15.6069 6.93706C15.5708 6.97405 15.5277 7.00355 15.4802 7.02387C15.4327 7.04419 15.3816 7.05492 15.3299 7.05545H14.3044C13.1958 7.05545 12.9804 7.60091 12.9804 8.38909V10.1359H15.4172C15.4726 10.1366 15.5272 10.149 15.5775 10.1723C15.6278 10.1957 15.6726 10.2294 15.7089 10.2712C15.7452 10.3131 15.7722 10.3622 15.7882 10.4152C15.8043 10.4683 15.8088 10.5241 15.8017 10.5791Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_43_894">
+                                                <rect width="24" height="24" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg></a>
+                                <a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        class="bg-[#F85559] rounded-full w-5 h-5">
+                                        <g clip-path="url(#clip0_43_899)">
+                                            <path
+                                                d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z"
+                                                fill="#F85559" />
+                                            <path
+                                                d="M19.773 7.17947C19.1883 7.43483 18.5699 7.60447 17.9367 7.68316C18.6041 7.28737 19.1031 6.66034 19.3388 5.92105C18.7141 6.29185 18.0306 6.55298 17.3178 6.69316C16.881 6.22603 16.3137 5.90115 15.6898 5.76077C15.0658 5.6204 14.4141 5.67103 13.8193 5.90607C13.2246 6.14112 12.7143 6.54971 12.3549 7.07869C11.9954 7.60768 11.8035 8.23257 11.8041 8.87211C11.8018 9.11621 11.8267 9.35981 11.8783 9.59842C10.6104 9.53614 9.36981 9.20708 8.23771 8.63273C7.1056 8.05838 6.10739 7.25166 5.30829 6.26526C4.89754 6.96696 4.77029 7.79904 4.95254 8.59143C5.13478 9.38381 5.61278 10.0767 6.28881 10.5284C5.78422 10.5148 5.29031 10.38 4.84881 10.1353V10.17C4.85023 10.9055 5.10482 11.6181 5.56978 12.188C6.03474 12.7579 6.68172 13.1504 7.40197 13.2995C7.1294 13.3711 6.84852 13.4061 6.56671 13.4037C6.36379 13.4074 6.16106 13.3894 5.96197 13.35C6.16832 13.9826 6.56559 14.5356 7.09913 14.9332C7.63268 15.3307 8.27629 15.5532 8.94145 15.57C7.81427 16.451 6.42472 16.9296 4.99408 16.9295C4.73917 16.9316 4.4844 16.9169 4.23145 16.8853C5.69019 17.8258 7.39054 18.3227 9.12618 18.3158C14.992 18.3158 18.1988 13.4574 18.1988 9.24632C18.1988 9.10579 18.1988 8.97 18.1878 8.83421C18.8123 8.38348 19.3495 7.82275 19.773 7.17947Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_43_899">
+                                                <rect width="24" height="24" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg></a>
+                                <a>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        class="bg-[#F85559] rounded-full w-5 h-5">
+                                        <g clip-path="url(#clip0_43_905)">
+                                            <path
+                                                d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z"
+                                                fill="#F85559" />
+                                            <path
+                                                d="M9.31598 7.63737C9.31629 7.96166 9.2204 8.27875 9.04043 8.54851C8.86046 8.81828 8.6045 9.02859 8.30496 9.15284C8.00542 9.27708 7.67575 9.30967 7.35768 9.24648C7.03961 9.18329 6.74743 9.02716 6.51812 8.79786C6.28882 8.56855 6.13269 8.27637 6.0695 7.9583C6.00631 7.64023 6.0389 7.31056 6.16315 7.01102C6.28739 6.71148 6.4977 6.45552 6.76747 6.27556C7.03723 6.09559 7.35433 5.99969 7.67861 6C8.11274 6.00042 8.52897 6.17306 8.83595 6.48004C9.14292 6.78701 9.31556 7.20324 9.31598 7.63737Z"
+                                                fill="white" />
+                                            <path
+                                                d="M8.54113 9.95842H6.81692C6.59281 9.95842 6.41113 10.1401 6.41113 10.3642V17.5942C6.41113 17.8183 6.59281 18 6.81692 18H8.54113C8.76524 18 8.94692 17.8183 8.94692 17.5942V10.3642C8.94692 10.1401 8.76524 9.95842 8.54113 9.95842Z"
+                                                fill="white" />
+                                            <path
+                                                d="M17.9605 14.1268V17.6274C17.9605 17.7262 17.9213 17.821 17.8514 17.8909C17.7815 17.9607 17.6867 18 17.5879 18H15.7374C15.6385 18 15.5438 17.9607 15.4739 17.8909C15.404 17.821 15.3647 17.7262 15.3647 17.6274V14.2358C15.3647 13.7289 15.5116 12.0253 14.0416 12.0253C12.9016 12.0253 12.6695 13.1968 12.6205 13.7226V17.6353C12.6185 17.7322 12.5787 17.8245 12.5098 17.8926C12.4408 17.9607 12.348 17.9992 12.2511 18H10.4605C10.4115 18.0002 10.363 17.9907 10.3177 17.9721C10.2724 17.9534 10.2312 17.926 10.1966 17.8913C10.1619 17.8567 10.1345 17.8155 10.1158 17.7702C10.0972 17.7249 10.0877 17.6764 10.0879 17.6274V10.3326C10.0877 10.2836 10.0972 10.2349 10.1158 10.1895C10.1344 10.1442 10.1619 10.1029 10.1965 10.0681C10.2311 10.0334 10.2722 10.0058 10.3176 9.98694C10.3629 9.96811 10.4115 9.95842 10.4605 9.95842H12.2511C12.3007 9.95758 12.3501 9.96664 12.3962 9.98507C12.4423 10.0035 12.4843 10.0309 12.5198 10.0658C12.5552 10.1006 12.5833 10.1421 12.6025 10.188C12.6217 10.2338 12.6316 10.283 12.6316 10.3326V10.9642C13.0547 10.3326 13.6832 9.84 15.0205 9.84C17.9779 9.83842 17.9605 12.6063 17.9605 14.1268Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_43_905">
+                                                <rect width="24" height="24" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-transparent mb-4">
+                        <figure class="px-8 pt-8">
+                            <img src="./images/member4.png" alt="Shoes" class="rounded-xl " />
+                        </figure>
+                        <div class="card-body items-center text-center mb-4">
+                            <h2 class="card-title  text-white  ">Chaity</h2>
+                            <p class="text-sm text-white ">Fruits Expert</p>
+
+                            <div class="card-actions flex flex-row ">
+
+
+                                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" class="bg-[#F85559] rounded-full w-5 h-5">
+                                        <g clip-path="url(#clip0_43_894)">
+                                            <path
+                                                d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z"
+                                                fill="#F85559" />
+                                            <path
+                                                d="M15.8017 10.5791L15.5604 12.6695C15.5503 12.7649 15.5056 12.8533 15.4347 12.9179C15.3639 12.9825 15.2717 13.0189 15.1758 13.02H12.994L12.9831 19.2177C12.9838 19.2912 12.9556 19.362 12.9046 19.4148C12.8536 19.4676 12.7838 19.4982 12.7104 19.5H10.4999C10.4631 19.5 10.4268 19.4926 10.3929 19.4782C10.3591 19.4639 10.3286 19.4428 10.3031 19.4163C10.2776 19.3898 10.2578 19.3584 10.2447 19.3241C10.2317 19.2897 10.2257 19.2531 10.2272 19.2164V13.02H8.59081C8.53941 13.0195 8.48862 13.0088 8.44135 12.9887C8.39407 12.9685 8.35122 12.9392 8.31526 12.9025C8.2793 12.8658 8.25092 12.8223 8.23175 12.7746C8.21258 12.7269 8.20299 12.6759 8.20353 12.6245L8.19535 10.5341C8.19463 10.4825 8.20408 10.4313 8.22315 10.3834C8.24222 10.3355 8.27055 10.2918 8.30651 10.2548C8.34247 10.2178 8.38537 10.1883 8.43274 10.1679C8.48012 10.1475 8.53105 10.1366 8.58262 10.1359H10.2272V8.11773C10.2272 5.775 11.6181 4.5 13.6581 4.5H15.3299C15.3816 4.50053 15.4327 4.51127 15.4802 4.53158C15.5277 4.5519 15.5708 4.5814 15.6069 4.6184C15.643 4.65539 15.6714 4.69915 15.6906 4.74716C15.7098 4.79517 15.7193 4.84649 15.7185 4.89818V6.65727C15.7193 6.70896 15.7098 6.76028 15.6906 6.8083C15.6714 6.85631 15.643 6.90007 15.6069 6.93706C15.5708 6.97405 15.5277 7.00355 15.4802 7.02387C15.4327 7.04419 15.3816 7.05492 15.3299 7.05545H14.3044C13.1958 7.05545 12.9804 7.60091 12.9804 8.38909V10.1359H15.4172C15.4726 10.1366 15.5272 10.149 15.5775 10.1723C15.6278 10.1957 15.6726 10.2294 15.7089 10.2712C15.7452 10.3131 15.7722 10.3622 15.7882 10.4152C15.8043 10.4683 15.8088 10.5241 15.8017 10.5791Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_43_894">
+                                                <rect width="24" height="24" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg></a>
+                                <a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        class="bg-[#F85559] rounded-full w-5 h-5">
+                                        <g clip-path="url(#clip0_43_899)">
+                                            <path
+                                                d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z"
+                                                fill="#F85559" />
+                                            <path
+                                                d="M19.773 7.17947C19.1883 7.43483 18.5699 7.60447 17.9367 7.68316C18.6041 7.28737 19.1031 6.66034 19.3388 5.92105C18.7141 6.29185 18.0306 6.55298 17.3178 6.69316C16.881 6.22603 16.3137 5.90115 15.6898 5.76077C15.0658 5.6204 14.4141 5.67103 13.8193 5.90607C13.2246 6.14112 12.7143 6.54971 12.3549 7.07869C11.9954 7.60768 11.8035 8.23257 11.8041 8.87211C11.8018 9.11621 11.8267 9.35981 11.8783 9.59842C10.6104 9.53614 9.36981 9.20708 8.23771 8.63273C7.1056 8.05838 6.10739 7.25166 5.30829 6.26526C4.89754 6.96696 4.77029 7.79904 4.95254 8.59143C5.13478 9.38381 5.61278 10.0767 6.28881 10.5284C5.78422 10.5148 5.29031 10.38 4.84881 10.1353V10.17C4.85023 10.9055 5.10482 11.6181 5.56978 12.188C6.03474 12.7579 6.68172 13.1504 7.40197 13.2995C7.1294 13.3711 6.84852 13.4061 6.56671 13.4037C6.36379 13.4074 6.16106 13.3894 5.96197 13.35C6.16832 13.9826 6.56559 14.5356 7.09913 14.9332C7.63268 15.3307 8.27629 15.5532 8.94145 15.57C7.81427 16.451 6.42472 16.9296 4.99408 16.9295C4.73917 16.9316 4.4844 16.9169 4.23145 16.8853C5.69019 17.8258 7.39054 18.3227 9.12618 18.3158C14.992 18.3158 18.1988 13.4574 18.1988 9.24632C18.1988 9.10579 18.1988 8.97 18.1878 8.83421C18.8123 8.38348 19.3495 7.82275 19.773 7.17947Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_43_899">
+                                                <rect width="24" height="24" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg></a>
+                                <a>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        class="bg-[#F85559] rounded-full w-5 h-5">
+                                        <g clip-path="url(#clip0_43_905)">
+                                            <path
+                                                d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z"
+                                                fill="#F85559" />
+                                            <path
+                                                d="M9.31598 7.63737C9.31629 7.96166 9.2204 8.27875 9.04043 8.54851C8.86046 8.81828 8.6045 9.02859 8.30496 9.15284C8.00542 9.27708 7.67575 9.30967 7.35768 9.24648C7.03961 9.18329 6.74743 9.02716 6.51812 8.79786C6.28882 8.56855 6.13269 8.27637 6.0695 7.9583C6.00631 7.64023 6.0389 7.31056 6.16315 7.01102C6.28739 6.71148 6.4977 6.45552 6.76747 6.27556C7.03723 6.09559 7.35433 5.99969 7.67861 6C8.11274 6.00042 8.52897 6.17306 8.83595 6.48004C9.14292 6.78701 9.31556 7.20324 9.31598 7.63737Z"
+                                                fill="white" />
+                                            <path
+                                                d="M8.54113 9.95842H6.81692C6.59281 9.95842 6.41113 10.1401 6.41113 10.3642V17.5942C6.41113 17.8183 6.59281 18 6.81692 18H8.54113C8.76524 18 8.94692 17.8183 8.94692 17.5942V10.3642C8.94692 10.1401 8.76524 9.95842 8.54113 9.95842Z"
+                                                fill="white" />
+                                            <path
+                                                d="M17.9605 14.1268V17.6274C17.9605 17.7262 17.9213 17.821 17.8514 17.8909C17.7815 17.9607 17.6867 18 17.5879 18H15.7374C15.6385 18 15.5438 17.9607 15.4739 17.8909C15.404 17.821 15.3647 17.7262 15.3647 17.6274V14.2358C15.3647 13.7289 15.5116 12.0253 14.0416 12.0253C12.9016 12.0253 12.6695 13.1968 12.6205 13.7226V17.6353C12.6185 17.7322 12.5787 17.8245 12.5098 17.8926C12.4408 17.9607 12.348 17.9992 12.2511 18H10.4605C10.4115 18.0002 10.363 17.9907 10.3177 17.9721C10.2724 17.9534 10.2312 17.926 10.1966 17.8913C10.1619 17.8567 10.1345 17.8155 10.1158 17.7702C10.0972 17.7249 10.0877 17.6764 10.0879 17.6274V10.3326C10.0877 10.2836 10.0972 10.2349 10.1158 10.1895C10.1344 10.1442 10.1619 10.1029 10.1965 10.0681C10.2311 10.0334 10.2722 10.0058 10.3176 9.98694C10.3629 9.96811 10.4115 9.95842 10.4605 9.95842H12.2511C12.3007 9.95758 12.3501 9.96664 12.3962 9.98507C12.4423 10.0035 12.4843 10.0309 12.5198 10.0658C12.5552 10.1006 12.5833 10.1421 12.6025 10.188C12.6217 10.2338 12.6316 10.283 12.6316 10.3326V10.9642C13.0547 10.3326 13.6832 9.84 15.0205 9.84C17.9779 9.83842 17.9605 12.6063 17.9605 14.1268Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_43_905">
+                                                <rect width="24" height="24" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <section class="mx-auto max-w-[1200px] lg:mt-16 mb-10">
+            <div class="md:flex-1">
+                <h3 class=" text-center text-xl font-bold  md:pl-16 md:text-4xl md:font-extrabold lg:text-5xl lg:mb-4">
+                    Why Choose Us</h3>
+                <p
+                    class="text-center text-[10px] leading-5 mb-2 py-5 px-16 lg:mb-8  md:py-2 md:pr-4 md:text-xs lg:px-44 lg:mx-48 ">
+                    Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin
+                    literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+        </section>
+        <section
+            class="mx-4 max-w-[1200px] mb-10 grid lg:mx-24 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 items-center justify-self-center">
+            <div class="">
+                <div class="flex gap-4 justify-center items-center mb-4 flex-col md:flex-row lg:mb-8">
+                    <img src="images/icons/group 1.svg" alt="" class="bg-[#1212121a] rounded-full p-4">
+                    <div>
+                        <h2
+                            class=" md:card-title text-xl font-bold text-gradient-start text-center md:mb-2 mb-4 md:text-left ">
+                            Dedicated Team</h2>
+                        <hr class="w-1/3 border-[#121212] border-solid border-1 mb-4 md:mb-2 mx-auto md:mx-0">
+                        <p class="text-sm text-gradient-start text-center px-8 md:px-0 md:text-left lg:pr-4">
+                            Professional employees are there for you to pick the most
+                            amazing and fresh fruits.</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-4 justify-center items-center mb-4 flex-col md:flex-row lg:mb-8">
+                    <img src="images/icons/love 1.svg" alt="" class="bg-[#1212121a] rounded-full p-4">
+                    <div>
+                        <h2
+                            class=" md:card-title text-xl font-bold text-gradient-start text-center md:mb-2 mb-4 md:text-left ">
+                            Fresh is Best</h2>
+                        <hr class="w-1/3 border-[#121212] border-solid border-1 mb-4 md:mb-2 mx-auto md:mx-0">
+                        <p class="text-sm text-gradient-start text-center px-8 md:px-0 md:text-left lg:pr-4">
+                            Professional employees are there for you to pick the most
+                            amazing and fresh fruits.</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-4 justify-center items-center mb-4 flex-col md:flex-row lg:mb-8">
+                    <img src="images/icons/gift-box 1.svg" alt="" class="bg-[#1212121a] rounded-full p-4">
+                    <div>
+                        <h2
+                            class=" md:card-title text-xl font-bold text-gradient-start text-center md:mb-2 mb-4 md:text-left ">
+                            Gift Certificates</h2>
+                        <hr class="w-1/3 border-[#121212] border-solid border-1 mb-4 md:mb-2 mx-auto md:mx-0">
+                        <p class="text-sm text-gradient-start text-center px-8 md:px-0 md:text-left lg:pr-4">
+                            Professional employees are there for you to pick the most
+                            amazing and fresh fruits.</p>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class=" row-span-full col-span-full md:col-span-4 mx-auto lg:row-span-1 lg:col-span-1 lg:mx-0">
+                <img src="images/whychoose1.png" alt="" class="">
+            </div>
+            <div class="">
+                <div
+                    class="flex gap-4 justify-center items-center mb-4 flex-col md:flex-row lg:flex-row-reverse lg:flex-end lg:mb-8">
+                    <img src="images/icons/group 1.svg" alt="" class="bg-[#1212121a] rounded-full p-4">
+                    <div>
+                        <h2
+                            class=" md:card-title text-xl font-bold text-gradient-start text-center md:mb-2 mb-4 md:text-left lg:text-right ">
+                            Integrated Supplier</h2>
+                        <hr class="w-1/3 border-[#121212] border-solid border-1 mb-4 md:mb-2 mx-auto md:mx-0 lg:ml-44">
+                        <p
+                            class="text-sm text-gradient-start text-center px-8 md:px-0 md:text-left lg:text-right lg:pl-4">
+                            Professional employees are there for you to pick the most
+                            amazing and fresh fruits.</p>
+                    </div>
+                </div>
+
+                <div
+                    class="flex gap-4 justify-center items-center mb-4 flex-col md:flex-row lg:mb-8 lg:flex-row-reverse lg:flex-end">
+                    <img src="images/icons/love 1.svg" alt="" class="bg-[#1212121a] rounded-full p-4">
+                    <div>
+                        <h2
+                            class=" md:card-title text-xl font-bold text-gradient-start text-center md:mb-2 mb-4 md:text-left lg:text-right ">
+                            Sustainable Practice</h2>
+                        <hr class="w-1/3 border-[#121212] border-solid border-1 mb-4 md:mb-2 mx-auto md:mx-0 lg:ml-44">
+                        <p
+                            class="text-sm text-gradient-start text-center px-8 md:px-0 md:text-left lg:text-right lg:pl-4">
+                            Professional employees are there for you to pick the most
+                            amazing and fresh fruits.</p>
+                    </div>
+                </div>
+
+                <div
+                    class="flex gap-4 justify-center items-center mb-4 flex-col md:flex-row lg:mb-8 lg:flex-row-reverse lg:flex-end">
+                    <img src="images/icons/gift-box 1.svg" alt="" class="bg-[#1212121a] rounded-full p-4">
+                    <div>
+                        <h2
+                            class=" md:card-title text-xl font-bold text-gradient-start text-center md:mb-2 mb-4 md:text-left lg:text-right ">
+                            The Benefits Only</h2>
+                        <hr class="w-1/3 border-[#121212] border-solid border-1 mb-4 md:mb-2 mx-auto md:mx-0 lg:ml-44">
+                        <p
+                            class="text-sm text-gradient-start text-center px-8 md:px-0 md:text-left lg:text-right lg:pl-4">
+                            Professional employees are there for you to pick the most
+                            amazing and fresh fruits.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer class="footer footer-center bg-gradient-start text-primary-content mx-auto py-20 font-lato">
+        <div>
+            <div class="footer-center flex gap-2 md:gap-4 my-2">
+                <img src="./images/logo.png" alt="" class="w-8 h-8
+                md:w-13 md:h-12 items-center justify-center font-bold ">
+                <a
+                    class=" normal-case text-2xl md:text-4xl items-center justify-center font-bold lg:inline-block text-white ">Fruit
+                    Burst</a>
+            </div>
+            <div>
+                <ul
+                    class=" footer-center flex gap-2 md:gap-4 flex-wrap menu menu-horizontal px-4 mx-auto text-[10px] md:text-lg font-medium lg:flex text-white ">
+                    <li class="flex-1"><a>Home</a></li>
+                    <li class="flex-1"><a>About Us</a></li>
+                    <li class="flex-1"><a>Shop</a></li>
+                    <li class="flex-1"><a>All Fruits</a></li>
+                    <li class="flex-1"><a>Support</a></li>
+                    <li class="flex-1"><a>My Account</a></li>
+                </ul>
+            </div>
+            <div>
+                <div class="grid grid-flow-col gap-4 text-white">
+                    <a><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                            class="fill-current">
+                            <path
+                                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                            </path>
+                        </svg></a>
+                    <a><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 40 40" fill="none">
+                            <g clip-path="url(#clip0_13_2940)">
+                                <path
+                                    d="M40 20C40 29.9828 32.6859 38.257 23.125 39.757V25.7813H27.7852L28.6719 20H23.125V16.2484C23.125 14.6664 23.9 13.125 26.3844 13.125H28.9062V8.20313C28.9062 8.20313 26.6172 7.8125 24.4289 7.8125C19.8609 7.8125 16.875 10.5813 16.875 15.5938V20H11.7969V25.7813H16.875V39.757C7.31406 38.257 0 29.9828 0 20C0 8.95469 8.95469 0 20 0C31.0453 0 40 8.95469 40 20Z"
+                                    fill="white" />
+                                <path
+                                    d="M27.7852 25.7812L28.6719 20H23.125V16.2484C23.125 14.6667 23.8998 13.125 26.3843 13.125H28.9062V8.20312C28.9062 8.20312 26.6175 7.8125 24.4293 7.8125C19.8609 7.8125 16.875 10.5813 16.875 15.5938V20H11.7969V25.7812H16.875V39.757C17.8933 39.9167 18.9369 40 20 40C21.0631 40 22.1067 39.9167 23.125 39.757V25.7812H27.7852Z"
+                                    fill="#1877F2" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_13_2940">
+                                    <rect width="40" height="40" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg></a>
+                    <a><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 58 40" fill="none">
+                            <path
+                                d="M55.9526 6.25899C55.294 3.81162 53.3644 1.88249 50.9175 1.22347C46.4468 0 28.5643 0 28.5643 0C28.5643 0 10.6821 0 6.21148 1.17683C3.81162 1.83542 1.83498 3.81206 1.17639 6.25899C0 10.7292 0 20 0 20C0 20 0 29.3174 1.17639 33.741C1.83542 36.1879 3.76455 38.1175 6.21192 38.7765C10.7292 40 28.5647 40 28.5647 40C28.5647 40 46.4468 40 50.9175 38.8232C53.3649 38.1646 55.294 36.235 55.953 33.7881C57.1294 29.3174 57.1294 20.0471 57.1294 20.0471C57.1294 20.0471 57.1765 10.7292 55.9526 6.25899Z"
+                                fill="white" />
+                            <path d="M22.8706 28.5648L37.7409 20.0001L22.8706 11.4354V28.5648Z" fill="#FF0000" />
+                        </svg></a>
+                    <a><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 41 40" fill="none">
+                            <path
+                                d="M36.1214 36V35.9988H36.1294V24.2628C36.1294 18.5216 34.8934 14.0988 28.1814 14.0988C24.9546 14.0988 22.7894 15.8696 21.9054 17.548H21.8122V14.6348H15.4482V35.9988H22.075V25.42C22.075 22.6348 22.603 19.9412 26.0522 19.9412C29.451 19.9412 29.5014 23.12 29.5014 25.5984V36H36.1214Z"
+                                fill="white" />
+                            <path d="M4.65723 14.636H11.292V36H4.65723V14.636Z" fill="white" />
+                            <path
+                                d="M7.97219 4C5.85059 4 4.12939 5.7212 4.12939 7.8428C4.12939 9.9644 5.85059 11.7216 7.97219 11.7216C10.0938 11.7216 11.815 9.9644 11.815 7.8428C11.8134 5.7212 10.0922 4 7.97219 4Z"
+                                fill="white" />
+                        </svg></a>
+                    <a><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 41 40" fill="none">
+                            <g clip-path="url(#clip0_13_2954)">
+                                <path
+                                    d="M40.0903 11.7601C39.9966 9.63476 39.6529 8.17359 39.1606 6.90748C38.6527 5.56353 37.8713 4.36029 36.8475 3.36003C35.8472 2.34421 34.6361 1.55487 33.3077 1.05489C32.0342 0.562549 30.5807 0.218854 28.4553 0.125146C26.3141 0.0235031 25.6344 0 20.2036 0C14.7729 0 14.0931 0.0235031 11.9598 0.11721C9.83446 0.210918 8.3733 0.554918 7.10749 1.04696C5.76323 1.55487 4.55999 2.33627 3.55974 3.36003C2.54392 4.36029 1.75488 5.57146 1.2546 6.89985C0.762256 8.17359 0.418561 9.62682 0.324854 11.7522C0.22321 13.8934 0.199707 14.5732 0.199707 20.0039C0.199707 25.4347 0.22321 26.1144 0.316917 28.2477C0.410625 30.3731 0.754625 31.8342 1.24697 33.1003C1.75488 34.4443 2.54392 35.6475 3.55974 36.6478C4.55999 37.6636 5.77117 38.4529 7.09955 38.9529C8.3733 39.4453 9.82653 39.789 11.9522 39.8827C14.0852 39.9767 14.7652 39.9999 20.196 39.9999C25.6267 39.9999 26.3065 39.9767 28.4398 39.8827C30.5651 39.789 32.0263 39.4453 33.2921 38.9529C35.9803 37.9136 38.1057 35.7882 39.145 33.1003C39.637 31.8266 39.981 30.3731 40.0747 28.2477C40.1685 26.1144 40.192 25.4347 40.192 20.0039C40.192 14.5732 40.184 13.8934 40.0903 11.7601ZM36.4882 28.0914C36.4022 30.0449 36.074 31.0998 35.8005 31.8031C35.1284 33.5457 33.7454 34.9287 32.0028 35.6008C31.2995 35.8743 30.237 36.2024 28.2911 36.2882C26.1813 36.3822 25.5486 36.4054 20.2116 36.4054C14.8745 36.4054 14.2338 36.3822 12.1317 36.2882C10.1782 36.2024 9.12326 35.8743 8.42 35.6008C7.55283 35.2803 6.76349 34.7724 6.1228 34.1082C5.45861 33.4596 4.9507 32.6782 4.6302 31.811C4.35671 31.1078 4.02858 30.0449 3.94281 28.0994C3.8488 25.9896 3.8256 25.3565 3.8256 20.0195C3.8256 14.6824 3.8488 14.0417 3.94281 11.9399C4.02858 9.98639 4.35671 8.93149 4.6302 8.22823C4.9507 7.36075 5.45861 6.57172 6.13074 5.93072C6.77906 5.26653 7.56046 4.75862 8.42794 4.43843C9.1312 4.16494 10.194 3.83681 12.1396 3.75073C14.2494 3.65703 14.8824 3.63352 20.2192 3.63352C25.5642 3.63352 26.1969 3.65703 28.2991 3.75073C30.2526 3.83681 31.3075 4.16494 32.0107 4.43843C32.8779 4.75862 33.6672 5.26653 34.3079 5.93072C34.9721 6.57935 35.48 7.36075 35.8005 8.22823C36.074 8.93149 36.4022 9.99402 36.4882 11.9399C36.5819 14.0497 36.6054 14.6824 36.6054 20.0195C36.6054 25.3565 36.5819 25.9816 36.4882 28.0914Z"
+                                    fill="white" />
+                                <path
+                                    d="M20.2037 9.72845C14.5309 9.72845 9.92822 14.3308 9.92822 20.0039C9.92822 25.677 14.5309 30.2793 20.2037 30.2793C25.8768 30.2793 30.4791 25.677 30.4791 20.0039C30.4791 14.3308 25.8768 9.72845 20.2037 9.72845ZM20.2037 26.6693C16.5234 26.6693 13.5382 23.6844 13.5382 20.0039C13.5382 16.3234 16.5234 13.3385 20.2037 13.3385C23.8842 13.3385 26.8691 16.3234 26.8691 20.0039C26.8691 23.6844 23.8842 26.6693 20.2037 26.6693Z"
+                                    fill="white" />
+                                <path
+                                    d="M33.2843 9.32218C33.2843 10.6469 32.2102 11.721 30.8852 11.721C29.5605 11.721 28.4863 10.6469 28.4863 9.32218C28.4863 7.99716 29.5605 6.92334 30.8852 6.92334C32.2102 6.92334 33.2843 7.99716 33.2843 9.32218Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_13_2954">
+                                    <rect width="40" height="40" fill="white" transform="translate(0.129395)" />
+                                </clipPath>
+                            </defs>
+                        </svg></a>
+                    <a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 41 40" fill="none">
+                            <g clip-path="url(#clip0_13_2959)">
+                                <path
+                                    d="M27.6276 0C25.4951 0.147499 23.0026 1.51249 21.5501 3.28998C20.2251 4.90247 19.1351 7.29746 19.5601 9.62494C21.8901 9.69744 24.2976 8.29995 25.6926 6.49246C26.9976 4.80997 27.9851 2.42999 27.6276 0Z"
+                                    fill="white" />
+                                <path
+                                    d="M36.0553 13.4199C34.0078 10.8524 31.1303 9.36243 28.4128 9.36243C24.8253 9.36243 23.3078 11.0799 20.8153 11.0799C18.2454 11.0799 16.2929 9.36743 13.1904 9.36743C10.1429 9.36743 6.89793 11.2299 4.84044 14.4149C1.94796 18.8999 2.44295 27.3323 7.13043 34.5148C8.80792 37.0848 11.0479 39.9747 13.9779 39.9997C16.5854 40.0247 17.3204 38.3273 20.8528 38.3098C24.3853 38.2898 25.0553 40.0222 27.6578 39.9947C30.5903 39.9722 32.9528 36.7698 34.6303 34.1998C35.8328 32.3573 36.2803 31.4298 37.2127 29.3498C30.4303 26.7673 29.3428 17.1224 36.0553 13.4199Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_13_2959">
+                                    <rect width="40" height="40" fill="white" transform="translate(0.129395)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
